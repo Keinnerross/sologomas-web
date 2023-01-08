@@ -1,0 +1,41 @@
+.sliderMain {
+  width: 100vw;
+  background-color: black;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../../assets/img/back-shop.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.sliderSection {
+  width: 70%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.logoContainer {
+  width: 80%;
+  height: 50%;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets//img/logo_sologomas.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.line {
+  width: 80%;
+  height: 2px;
+  background-color: white;
+}
