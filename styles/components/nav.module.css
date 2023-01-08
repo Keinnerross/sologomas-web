@@ -1,0 +1,31 @@
+.navContainer {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.navSection {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 150px;
+  height: 30px;
+  background-image: url("../../assets/img/logo_sologomas.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navegation {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
