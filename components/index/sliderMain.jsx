@@ -1,6 +1,6 @@
-import styles from "../../styles/components/index/slider.module.css";
+import styles from "../../styles/components/index/sliderMain.module.css";
 
-const Slider = () => {
+const SliderMain = () => {
   return (
     <div className={styles.sliderMain}>
       <div className={styles.sliderSection}>
@@ -14,4 +14,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default SliderMain;

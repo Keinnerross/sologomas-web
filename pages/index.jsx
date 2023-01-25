@@ -1,10 +1,13 @@
 import Head from "next/head";
 import React, { useEffect } from "react";
 import Template from "../components/template";
-import Slider from "../components/index/slider";
+import SliderMain from "../components/index/sliderMain";
 import ProductCard from "../components/productCard";
 import styles from "../styles/index.module.css";
 import { FaHome, FaIndustry, FaCar, FaTools } from "react-icons/fa";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Index = () => {
   useEffect(() => {
@@ -21,27 +24,27 @@ const Index = () => {
 
   /*Icons */
 
-  const iconConstruction = <FaTools size={30}/>;
-  const iconHome = <FaHome size={30}/>;
-  const iconIndustrial = <FaIndustry size={30}/>;
-  const iconCar = <FaCar size={30}/>;
+  const iconConstruction = <FaTools size={30} />;
+  const iconHome = <FaHome size={30} />;
+  const iconIndustrial = <FaIndustry size={30} />;
+  const iconCar = <FaCar size={30} />;
+
+  /*Slider */
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <>
       <Head>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5apBmVG75NmQ1Jl24_vrRVmZaAwY05SQ" />
-        {/* Slick.js */}
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-        />
-        <script
-          type="text/javascript"
-          src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-        />
       </Head>
       <Template>
-        <Slider />
+        <SliderMain />
         {/* {"About Section"} */}
         <div className={styles.aboutContainer}>
           <div className={styles.aboutSection}>
@@ -104,7 +107,12 @@ const Index = () => {
               nuestros clientes.
             </p>
             <div className={styles.gallery}>
-              ESPACIO RESERVADO PARA GALERIA CON SLICK.JS
+              <Slider {...settings}>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+              </Slider>
             </div>
           </div>
         </div>
