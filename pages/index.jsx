@@ -5,9 +5,8 @@ import SliderMain from "../components/index/sliderMain";
 import ProductCard from "../components/productCard";
 import styles from "../styles/index.module.css";
 import { FaHome, FaIndustry, FaCar, FaTools } from "react-icons/fa";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import SliderImg from "../components/sliderImg";
+
 
 const Index = () => {
   useEffect(() => {
@@ -30,13 +29,7 @@ const Index = () => {
   const iconCar = <FaCar size={30} />;
 
   /*Slider */
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  
 
   return (
     <>
@@ -107,12 +100,7 @@ const Index = () => {
               nuestros clientes.
             </p>
             <div className={styles.gallery}>
-              <Slider {...settings}>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-              </Slider>
+              <SliderImg/>
             </div>
           </div>
         </div>

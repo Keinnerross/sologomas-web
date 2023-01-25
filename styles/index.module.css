@@ -55,8 +55,11 @@
 
 .galleryCointainer {
   width: 100vw;
-  height: 55vh;
+  height: 95vh;
   background-image: url("../assets/img/perales-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   display: flex;
   align-content: center;
@@ -87,7 +90,7 @@
 
 .galleryTitle {
   font-size: 28px;
-  color: yellow;
+  color: var(--yellowTitle);
 }
 
 .galleryDescription {
@@ -96,7 +99,6 @@
 
 .gallery {
   width: 100%;
-  background-color: var(--redbg);
   color: white;
 }
 
