@@ -1,0 +1,34 @@
+.productCardContainer {
+  width: 400px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.iconProduct {
+  width: 100px;
+  height: 100px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 500px;
+  border: 3.5px solid white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.iconProduct:hover {
+  transform: scale(1.1);
+  background-color: red;
+}
+
+.titleProduct {
+  margin-bottom: 20px;
+}
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 100;
+}

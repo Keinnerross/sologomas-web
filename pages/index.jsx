@@ -1,14 +1,10 @@
 import Head from "next/head";
-import react, { useEffect } from "react";
+import React, { useEffect } from "react";
 import Template from "../components/template";
 import Slider from "../components/index/slider";
 import ProductCard from "../components/productCard";
 import styles from "../styles/index.module.css";
-
-
-
-
-
+import { FaHome, FaIndustry, FaCar, FaTools } from "react-icons/fa";
 
 const Index = () => {
   useEffect(() => {
@@ -22,10 +18,27 @@ const Index = () => {
       map: map,
     });
   }, []);
+
+  /*Icons */
+
+  const iconConstruction = <FaTools size={30}/>;
+  const iconHome = <FaHome size={30}/>;
+  const iconIndustrial = <FaIndustry size={30}/>;
+  const iconCar = <FaCar size={30}/>;
   return (
     <>
       <Head>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5apBmVG75NmQ1Jl24_vrRVmZaAwY05SQ"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5apBmVG75NmQ1Jl24_vrRVmZaAwY05SQ" />
+        {/* Slick.js */}
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <script
+          type="text/javascript"
+          src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        />
       </Head>
       <Template>
         <Slider />
@@ -48,14 +61,16 @@ const Index = () => {
         <div className={styles.productsContainer}>
           <div className={styles.productsSection}>
             <ProductCard
-              titleProduct="GOMAS AUTOMOTRICES"
+              icon={iconCar}
+              titleProduct="SECTOR AUTOMOTRÍZ"
               Product1="Mangueras Automotrices"
               Product2="Flexibles Multiuso"
-              Product3="Correas tipo 9.5, A, B, C, PK, PJ y especiales."
-              Product4="Gomas de piso delantero y trasero"
+              Product3="Correas tipo 9.5, A, B, C"
+              Product4=" Correas tipo PK, PJ y especiales."
             />
             <ProductCard
-              titleProduct="GOMAS PARA CONSTRUCCIÓN"
+              icon={iconConstruction}
+              titleProduct="SECTOR CONSTRUCCIÓN"
               Product1="Grada escala."
               Product2="Espepejos panorámicos"
               Product3="Lomos de Toro"
@@ -64,12 +79,14 @@ const Index = () => {
           </div>
           <div className={styles.productsSection}>
             <ProductCard
-              titleProduct="GOMAS INDUSTRIALES"
+              icon={iconIndustrial}
+              titleProduct="SECTOR INDUSTRIAL"
               Product1="Gomas para Minería."
               Product2="Gomas agricolas."
               Product3="Gomas para Construcción."
             />
             <ProductCard
+              icon={iconHome}
               titleProduct="GOMAS PARA EL HOGAR"
               Product1="Linea Hogar."
               Product2="Todo para pisos."
