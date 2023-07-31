@@ -18,9 +18,7 @@ const InfoBar = () => {
           >
             <FaWhatsapp size={25} />
           </div>
-          <a target="_blank" href="https://wa.me/56992664150">
-            <p>+569 9266 4150</p>
-          </a>
+          <p>+569 9266 4150</p>
         </div>
       </div>
     </div>

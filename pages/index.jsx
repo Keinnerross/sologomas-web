@@ -10,7 +10,6 @@ import Sectores from "../components/sectores";
 const Index = () => {
   return (
     <>
-      <Head></Head>
       <Template id="top">
         <SliderMain />
         <InfoBar></InfoBar>
@@ -72,20 +71,17 @@ const Index = () => {
         <div className={styles.galleryCointainer} id="galeria">
           <div className={styles.overlay}></div>
           <div className={styles.gallerySection}>
-            <h2 className={styles.galleryTitle}>Galería de productos</h2>
+            <h1
+              style={{
+                fontSize: "26px",
+              }}
+              className={styles.galleryTitle}
+            >
+              {" "}
+              Especialistas en productos de goma
+            </h1>
 
             <p className={styles.galleryDescription}>
-              <h1
-                style={{
-                  padding: "5px 0",
-                  margin: 0,
-                  fontSize: "20px",
-                  fontWeight: 500,
-                  fontStyle: "italic",
-                }}
-              >
-                Especialistas en productos de goma.
-              </h1>
               Contamos con el mejor servicio y la mejor calidad en todos
               nuestros productos para así atender cada una de las necesidades de
               nuestros clientes. <br></br>

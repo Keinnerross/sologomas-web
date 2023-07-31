@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>SoloGomas - Especialistas en productos de Goma</title>
+        <title>SoloGomas - Especialistas en productos de Caucho</title>
       </Head>
       <body>
         <Main />

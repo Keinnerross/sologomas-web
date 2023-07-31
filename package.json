@@ -2,10 +2,14 @@
   "name": "sologomas-web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://keinnerross.github.io/sologomas-web",
   "scripts": {
+
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -18,5 +22,8 @@
     "react-icons": "^4.7.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
