@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
 
           <div className={styles.columnInfo}>
-            <h3>Suscribete a nuestro Newsletter!</h3>
+            <h3>Suscribete a nuestro Newsletter!📰 </h3>
             <form action="">
               <input type="text" placeholder="Nombre" />
               <input type="text" placeholder="Correo" />

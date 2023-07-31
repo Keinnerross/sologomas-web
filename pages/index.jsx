@@ -7,9 +7,11 @@ import SliderProducts from "../components/sliderProducts";
 import InfoBar from "../components/infoBar";
 import Horarios from "../components/horarios";
 import Sectores from "../components/sectores";
+import losperalesbg from "../assets/img/perales-bg.jpg";
+
 const Index = () => {
   return (
-    <>
+    <div>
       <Template id="top">
         <SliderMain />
         <InfoBar></InfoBar>
@@ -68,7 +70,11 @@ const Index = () => {
           </div>
         </div> */}
 
-        <div className={styles.galleryCointainer} id="galeria">
+        <div
+          className={styles.galleryCointainer}
+          id="galeria"
+          style={{ backgroundImage: `url(${losperalesbg.src})` }}
+        >
           <div className={styles.overlay}></div>
           <div className={styles.gallerySection}>
             <h1
@@ -94,7 +100,7 @@ const Index = () => {
         <Horarios></Horarios>
         <Sectores></Sectores>
       </Template>
-    </>
+    </div>
   );
 };
 
