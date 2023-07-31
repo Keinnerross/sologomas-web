@@ -79,7 +79,7 @@ const Index = () => {
           <div className={styles.gallerySection}>
             <h1
               style={{
-                fontSize: "26px",
+                fontSize: "25px",
               }}
               className={styles.galleryTitle}
             >
