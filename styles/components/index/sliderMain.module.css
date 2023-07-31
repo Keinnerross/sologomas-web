@@ -1,13 +1,21 @@
-.sliderMain {
+.bannerContainer {
   width: 100vw;
+  height: 450px;
+  cursor: pointer;
+}
+
+.sliderMain {
   background-color: black;
-  height: 65vh;
-  display: flex;
+  height: 450px;
+  min-height: 450px;
+  display: flex !important;
   justify-content: center;
+  align-items: center;
   background-image: url("../../../assets/img/back-shop.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  padding-top: 55px;
 }
 
 .sliderSection {
@@ -15,6 +23,7 @@
   height: 100%;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -22,8 +31,8 @@
 }
 
 .logoContainer {
-  width: 80%;
-  height: 50%;
+  width: 100px;
+  height: 50px;
 }
 
 .logo {
@@ -38,4 +47,77 @@
   width: 80%;
   height: 2px;
   background-color: white;
+}
+
+.banner1 {
+  height: 450px;
+  background-image: url("../../../assets/img/Banners/banner1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%;
+  transition: 0.4s;
+}
+
+.banner2 {
+  height: 450px;
+  background-image: url("../../../assets/img/Banners/banner2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 120%;
+  transition: 0.4s;
+}
+
+.banner1:hover {
+  background-size: 126%;
+}
+
+.banner2:hover {
+  background-size: 126%;
+}
+
+/* Estilos para tabletas (ancho entre 768px y 1200px) */
+@media (min-width: 900px) and (max-width: 1200px) {
+  .bannerContainer {
+    height: 300px;
+  }
+  .banner1 {
+    background-size: cover;
+    height: 300px;
+  }
+  .banner2 {
+    background-size: cover;
+    height: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .bannerContainer {
+    height: 300px;
+  }
+
+  .banner1 {
+    height: 300px;
+
+    background-size: cover;
+  }
+  .banner2 {
+    height: 300px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 700px) {
+  .bannerContainer {
+    height: 140px;
+  }
+
+  .banner1 {
+    height: 140px;
+    background-size: cover;
+  }
+  .banner2 {
+    height: 140px;
+    background-size: cover;
+  }
 }

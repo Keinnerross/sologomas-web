@@ -1,0 +1,78 @@
+.galleryCointainer {
+  width: 100vw;
+  height: 600px;
+  background-image: url("../../assets/img/back-shop.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.65;
+}
+
+.gallerySection {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  z-index: 1;
+}
+
+.galleryTitle {
+  font-size: 32px;
+  color: white;
+  z-index: 1;
+  padding: 0 0 50px 0;
+}
+
+.galleryDescription {
+  color: lightgray;
+}
+
+.gallery {
+  width: 100%;
+  color: white;
+}
+
+@media (min-width: 720px) and (max-width: 1200px) {
+  .galleryCointainer {
+    background-position: center;
+    background-size: cover;
+  }
+  .galleryTitle {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .galleryCointainer {
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .gallerySection {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .galleryTitle {
+    padding: 20px;
+    font-size: 24px;
+  }
+}

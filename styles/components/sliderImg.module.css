@@ -11,5 +11,11 @@
   object-fit: cover;
   object-position: center;
   border-radius: 9px;
+  cursor: pointer;
+}
 
+@media (min-width: 740px) and (max-width: 1200px) {
+  .imgSlider {
+    height: 450px;
+  }
 }

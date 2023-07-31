@@ -2,7 +2,6 @@
 
 .aboutContainer {
   width: 100vw;
-  height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,4 +137,13 @@
   width: 45%;
   height: 300px;
   background-color: rebeccapurple;
+}
+
+@media (max-width: 720px) {
+  .galleryCointainer {
+    height: auto;
+  }
+  .gallerySection {
+    justify-content: initial;
+  }
 }

@@ -1,44 +1,22 @@
 import Head from "next/head";
-import React, { useEffect } from "react";
 import Template from "../components/template";
 import SliderMain from "../components/index/sliderMain";
-import ProductCard from "../components/productCard";
 import styles from "../styles/index.module.css";
-import { FaHome, FaIndustry, FaCar, FaTools } from "react-icons/fa";
 import SliderImg from "../components/sliderImg";
-
-
+import SliderProducts from "../components/sliderProducts";
+import InfoBar from "../components/infoBar";
+import Horarios from "../components/horarios";
+import Sectores from "../components/sectores";
 const Index = () => {
-  useEffect(() => {
-    const coordenadas = { lat: -29.92976838789285, lng: -71.25572081867122 };
-    const map = new google.maps.Map(document.getElementById("map"), {
-      center: coordenadas,
-      zoom: 18,
-    });
-    const marcador = new google.maps.Marker({
-      position: coordenadas,
-      map: map,
-    });
-  }, []);
-
-  /*Icons */
-
-  const iconConstruction = <FaTools size={30} />;
-  const iconHome = <FaHome size={30} />;
-  const iconIndustrial = <FaIndustry size={30} />;
-  const iconCar = <FaCar size={30} />;
-
-  /*Slider */
-  
-
   return (
     <>
-      <Head>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5apBmVG75NmQ1Jl24_vrRVmZaAwY05SQ" />
-      </Head>
-      <Template>
+      <Head></Head>
+      <Template id="top">
         <SliderMain />
-        {/* {"About Section"} */}
+        <InfoBar></InfoBar>
+        <SliderProducts />
+
+        {/* {"About Section"}
         <div className={styles.aboutContainer}>
           <div className={styles.aboutSection}>
             <h2 className={styles.aboutTitle}>Sobre Nosotros</h2>
@@ -51,10 +29,10 @@ const Index = () => {
             </p>
             <div className={styles.logoCircle}></div>
           </div>
-        </div>
+        </div> */}
 
         {/* {"Products section"} */}
-        <div className={styles.productsContainer}>
+        {/* <div className={styles.productsContainer}>
           <div className={styles.productsSection}>
             <ProductCard
               icon={iconCar}
@@ -89,41 +67,36 @@ const Index = () => {
               Product3="Basureros"
             />
           </div>
-        </div>
-        <div className={styles.galleryCointainer}>
+        </div> */}
+
+        <div className={styles.galleryCointainer} id="galeria">
           <div className={styles.overlay}></div>
           <div className={styles.gallerySection}>
             <h2 className={styles.galleryTitle}>Galería de productos</h2>
+
             <p className={styles.galleryDescription}>
+              <h1
+                style={{
+                  padding: "5px 0",
+                  margin: 0,
+                  fontSize: "20px",
+                  fontWeight: 500,
+                  fontStyle: "italic",
+                }}
+              >
+                Especialistas en productos de goma.
+              </h1>
               Contamos con el mejor servicio y la mejor calidad en todos
               nuestros productos para así atender cada una de las necesidades de
-              nuestros clientes.
+              nuestros clientes. <br></br>
             </p>
             <div className={styles.gallery}>
-              <SliderImg/>
+              <SliderImg />
             </div>
           </div>
         </div>
-        <div className={styles.contactContainer}>
-          <div className={styles.contactSection}>
-            <div className={styles.contactInfoContainer}>
-              <h2 className={styles.contactTitle}>¡VISÍTANOS!</h2>
-              <div className={styles.contactLine} />
-              <span className={styles.contactInfo}>
-                Av. Balmaceda 1130 La Serena
-              </span>
-              <span className={styles.contactInfo}>
-                Calle Los Perales 654 - La Serena
-              </span>
-              <span className={styles.contactInfo}>sologomass@gmail.com</span>
-              <span className={styles.contactInfo}>512227715</span>
-              <span className={styles.contactInfo}>512390331</span>
-            </div>
-            <div className={styles.contactMap}>
-              <div id="map" style={{ width: "100%", height: "100%" }}></div>
-            </div>
-          </div>
-        </div>
+        <Horarios></Horarios>
+        <Sectores></Sectores>
       </Template>
     </>
   );

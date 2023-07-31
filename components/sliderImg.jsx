@@ -13,10 +13,28 @@ const SliderImg = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     gap: 3,
+    responsive: [
+      {
+        breakpoint: 1180,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+    ],
   };
 
   return (
-    <>
+    <div>
       <Slider {...settings}>
         <div className={styles.imgSlider}>
           <Image
@@ -93,7 +111,7 @@ const SliderImg = () => {
           />
         </div>
       </Slider>
-    </>
+    </div>
   );
 };
 

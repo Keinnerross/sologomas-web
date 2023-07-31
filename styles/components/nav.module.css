@@ -4,23 +4,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   position: fixed;
   top: 0;
   z-index: 100;
 }
 
 .navSection {
-  width: 75%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
 }
 
+.navSection li {
+  min-height: 30px;
+  transition: 0.1s;
+  color: white;
+}
+.navSection li:hover {
+  border-bottom: solid 2.5px 
+}
+
 .logo {
-  width: 150px;
-  height: 30px;
+  width: 180px;
+  height: 40px;
   background-image: url("../../assets/img/logo_sologomas.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -31,4 +39,14 @@
   display: flex;
   list-style: none;
   gap: 10px;
+  font-weight: 600;
+}
+
+/* Estilos para dispositivos móviles (ancho máximo de 767px) */
+
+/* Estilos para tabletas (ancho entre 768px y 1023px) */
+@media (min-width: 20px) and (max-width: 1026px) {
+  .navContainer {
+    position: relative;
+  }
 }
