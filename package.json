@@ -2,7 +2,6 @@
   "name": "sologomas-web",
   "version": "0.1.0",
   "private": true,
-  "export": "next export",
   "homepage": "https://keinnerross.github.io/sologomas-web",
   "scripts": {
 
@@ -10,7 +9,9 @@
     "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
-    "lint": "next lint"
+    "lint": "next lint",
+  "export": "next export"
+
   },
   "dependencies": {
     "@next/font": "13.1.1",
