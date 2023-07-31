@@ -1,5 +1,7 @@
 import styles from "../../styles/components/index/sliderMain.module.css";
 import Slider from "react-slick";
+import bannerOne from "../../assets/img/Banners/banner1.png";
+import bannerTwo from "../../assets/img/Banners/banner2.jpg";
 
 const SliderMain = () => {
   const settings = {
@@ -15,17 +17,18 @@ const SliderMain = () => {
 
   return (
     <Slider className={styles.bannerContainer} {...settings}>
-      <div className={styles.banner1}></div>
-      <div className={styles.banner2}></div>
-      {/* <div className={styles.sliderMain}>
-        <div className={styles.sliderSection}>
-          <div className={styles.logoContainer}>
-            <div className={styles.logo}></div>
-          </div>
-          <div className={styles.line}></div>
-          <h4>AUTOMOTRÍZ - MINERÍA - CONSTRUCCIÓN - HOGAR</h4>
-        </div>
-      </div> */}
+      <div>
+        <div
+          className={styles.banner1}
+          style={{ backgroundImage: `url(${bannerOne.src})` }}
+        ></div>
+      </div>
+      <div>
+        <div
+          className={styles.banner2}
+          style={{ backgroundImage: `url(${bannerTwo.src})` }}
+        ></div>
+      </div>
     </Slider>
   );
 };

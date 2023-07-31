@@ -1,17 +1,13 @@
-.imgSlider {
-  width: 250px;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .image {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  width: 250px;
+  max-width: 250px;
+  height: 250px;
+  max-height: 250px;
   border-radius: 9px;
   cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 740px) and (max-width: 1200px) {

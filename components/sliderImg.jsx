@@ -3,6 +3,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "../styles/components/sliderImg.module.css";
 import Image from "next/image";
+import codoPicture from "../public/imgCarousel/codos-silicona-turbo-agua.jpg";
+import brochesPicture from "../public/imgCarousel/broches-carrocerria-tapabarro-molduras.jpg";
+import bujesPicture from "../public/imgCarousel/bujes-goma-soportes-escape.jpg";
+import pkPicture from "../public/imgCarousel/Correas-tipo-pk.jpg";
+import rollosPicture from "../public/imgCarousel/pisos-goma-rollos.jpg";
+import estacionamientoPicture from "../public/imgCarousel/topes-estacionamiento.jpg";
+import slingaPicture from "../public/imgCarousel/slingas-seguridad.jpg";
+import turbo from "../public/imgCarousel/Mangueras-silicona-turbo.jpg";
 
 const SliderImg = () => {
   const settings = {
@@ -37,77 +45,70 @@ const SliderImg = () => {
     <div>
       <Slider {...settings}>
         <div className={styles.imgSlider}>
-          <Image
+          <div
             className={styles.image}
-            src="/imgCarousel/slingas-seguridad.jpg"
-            width={700}
-            height={700}
+            style={{
+              backgroundImage: `url(${codoPicture.src})`,
+            }}
+          />
+        </div>
+        <div className={styles.imgSlider}>
+          <div
+            className={styles.image}
+            style={{
+              backgroundImage: `url(${brochesPicture.src})`,
+            }}
+          />
+        </div>
+        <div className={styles.imgSlider}>
+          <div
+            className={styles.image}
+            style={{
+              backgroundImage: `url(${bujesPicture.src})`,
+            }}
+          />
+        </div>
+        <div className={styles.imgSlider}>
+          <div
+            className={styles.image}
+            style={{
+              backgroundImage: `url(${pkPicture.src})`,
+            }}
+          />
+        </div>
+        <div className={styles.imgSlider}>
+          <div
+            className={styles.image}
+            style={{
+              backgroundImage: `url(${estacionamientoPicture.src})`,
+            }}
           />
         </div>
 
         <div className={styles.imgSlider}>
-          <Image
+          <div
             className={styles.image}
-            src="/imgCarousel/codos-silicona-turbo-agua.jpg"
-            width={700}
-            height={900}
-          />
-        </div>
-        <div className={styles.imgSlider}>
-          <Image
-            className={styles.image}
-            src="/imgCarousel/bujes-goma-soportes-escape.jpg"
-            width={700}
-            height={700}
-          />
-        </div>
-        <div className={styles.imgSlider}>
-          <Image
-            className={styles.image}
-            src="/imgCarousel/Correas-tipo-pk.jpg"
-            width={700}
-            height={700}
-          />
-        </div>
-        <div className={styles.imgSlider}>
-          <Image
-            className={styles.image}
-            src="/imgCarousel/gomas-viales-lomo-toro.jfif"
-            width={700}
-            height={700}
-          />
-        </div>
-        <div className={styles.imgSlider}>
-          <Image
-            className={styles.image}
-            src="/imgCarousel/broches-carrocerria-tapabarro-molduras.jpg"
-            width={700}
-            height={900}
-          />
-        </div>
-        <div className={styles.imgSlider}>
-          <Image
-            className={styles.image}
-            src="/imgCarousel/Mangueras-silicona-turbo.jpg"
-            width={700}
-            height={700}
-          />
-        </div>
-        <div className={styles.imgSlider}>
-          <Image
-            className={styles.image}
-            src="/imgCarousel/pisos-goma-rollos.jpg"
-            width={700}
-            height={700}
+            style={{
+              backgroundImage: `url(${rollosPicture.src})`,
+            }}
           />
         </div>
 
         <div className={styles.imgSlider}>
-          <Image
+          <div
             className={styles.image}
-            src="/imgCarousel/topes-estacionamiento.jpg"
-            width={700}
-            height={700}
+            style={{
+              backgroundImage: `url(${turbo.src})`,
+            }}
+          />
+        </div>
+
+        <div className={styles.imgSlider}>
+          <div
+            className={styles.image}
+            style={{
+              backgroundImage: `url(${slingaPicture.src})`,
+            }}
           />
         </div>
       </Slider>
