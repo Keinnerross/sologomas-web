@@ -2,14 +2,14 @@
   "name": "sologomas-web",
   "version": "0.1.0",
   "private": true,
+  "export": "next export",
   "homepage": "https://keinnerross.github.io/sologomas-web",
   "scripts": {
 
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {

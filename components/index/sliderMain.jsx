@@ -14,11 +14,10 @@ const SliderMain = () => {
   };
 
   return (
-    <a target="_blank" href="https://wa.me/56992664150">
-      <Slider className={styles.bannerContainer} {...settings}>
-        <div className={styles.banner1}></div>
-        <div className={styles.banner2}></div>
-        {/* <div className={styles.sliderMain}>
+    <Slider className={styles.bannerContainer} {...settings}>
+      <div className={styles.banner1}></div>
+      <div className={styles.banner2}></div>
+      {/* <div className={styles.sliderMain}>
         <div className={styles.sliderSection}>
           <div className={styles.logoContainer}>
             <div className={styles.logo}></div>
@@ -27,8 +26,7 @@ const SliderMain = () => {
           <h4>AUTOMOTRÍZ - MINERÍA - CONSTRUCCIÓN - HOGAR</h4>
         </div>
       </div> */}
-      </Slider>
-    </a>
+    </Slider>
   );
 };
 
