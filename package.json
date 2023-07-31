@@ -2,12 +2,10 @@
   "name": "sologomas-web",
   "version": "0.1.0",
   "private": true,
-
   "scripts": {
-
-    "predeploy": "npm run build",
     "dev": "next dev",
     "build": "next build",
+    "start": "next start",
     "lint": "next lint",
   "export": "next export"
 
@@ -22,8 +20,5 @@
     "react-icons": "^4.7.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
   }
 }

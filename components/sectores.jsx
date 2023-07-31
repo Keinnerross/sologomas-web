@@ -5,9 +5,15 @@ import industrial from "../assets/img/sectores/industrial.jpg";
 import hogar from "../assets/img/sectores/hogar.jpg";
 import construccion from "../assets/img/sectores/construccion.jpg";
 import SectorCard from "./sectorCard";
+import balmacedaBg from "../assets/img/back-shop.png";
+
 const Sectores = () => {
   return (
-    <div className={styles.galleryCointainer} id="sectores">
+    <div
+      className={styles.galleryCointainer}
+      style={{ backgroundImage: `url(${balmacedaBg.src})` }}
+      id="sectores"
+    >
       <h2 className={styles.galleryTitle}>
         ¡Abarcamos los distintos Sectores de la región!
       </h2>
