@@ -1,3 +1,15 @@
+.sliderProductsContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.sliderSection {
+  width: 95%;
+}
+
 .categoryCard {
   max-width: 150px;
   height: 150px;

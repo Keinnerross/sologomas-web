@@ -11,6 +11,7 @@
 
 .navSection {
   width: 85%;
+  max-width: 1500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,13 +24,12 @@
   color: white;
 }
 .navSection li:hover {
-  border-bottom: solid 2.5px 
+  border-bottom: solid 2.5px;
 }
 
 .logo {
   width: 180px;
   height: 40px;
-  background-image: url("../../assets/img/logo_sologomas.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

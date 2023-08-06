@@ -1,11 +1,17 @@
 import styles from "../styles/components/nav.module.css";
+import logo from "../assets/img/logo_sologomas.png"
+
+
 const Nav = () => {
   return (
     <div className={styles.navContainer}>
       <div className={styles.navSection}>
         <a href="#top">
           {" "}
-          <div className={styles.logo}></div>
+          <div
+            className={styles.logo}
+            style={{ backgroundImage: `url(${logo.src})` }}
+          ></div>
         </a>
         <ul className={styles.navegation}>
           <li className={styles.li}>

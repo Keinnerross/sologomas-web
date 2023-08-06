@@ -1,29 +1,37 @@
-.galleryCointainer {
-  width: 100vw;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: top;
-  background-attachment: fixed;
+.galleryMainContainer {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 30px 0 60px 0;
+}
+.galleryCointainer {
+  width: 95%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: relative;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-radius: 4px;
 }
 
 .overlay {
+  width: 90%;
   height: 100%;
-  width: 100%;
   top: 0;
-  left: 0;
+  left: auto;
   position: absolute;
-  background-color: #000000;
+  background-color: #00000000;
   opacity: 0.66;
 }
 
 .gallerySection {
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;

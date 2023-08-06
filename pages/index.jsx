@@ -11,7 +11,7 @@ import losperalesbg from "../assets/img/perales-bg.jpg";
 
 const Index = () => {
   return (
-    <div>
+    <div className={styles.mainContainer}>
       <Template id="top">
         <SliderMain />
         <InfoBar></InfoBar>
@@ -69,31 +69,32 @@ const Index = () => {
             />
           </div>
         </div> */}
+        <div className={styles.GaleryMainContainer}>
+          <div
+            className={styles.galeryContainer}
+            id="galeria"
+            style={{ backgroundImage: `url(${losperalesbg.src})` }}
+          >
+            <div className={styles.overlay}></div>
+            <div className={styles.gallerySection}>
+              <h1
+                style={{
+                  fontSize: "25px",
+                }}
+                className={styles.galleryTitle}
+              >
+                {" "}
+                Especialistas en productos de goma
+              </h1>
 
-        <div
-          className={styles.galleryCointainer}
-          id="galeria"
-          style={{ backgroundImage: `url(${losperalesbg.src})` }}
-        >
-          <div className={styles.overlay}></div>
-          <div className={styles.gallerySection}>
-            <h1
-              style={{
-                fontSize: "25px",
-              }}
-              className={styles.galleryTitle}
-            >
-              {" "}
-              Especialistas en productos de goma
-            </h1>
-
-            <p className={styles.galleryDescription}>
-              Contamos con el mejor servicio y la mejor calidad en todos
-              nuestros productos para así atender cada una de las necesidades de
-              nuestros clientes. <br></br>
-            </p>
-            <div className={styles.gallery}>
-              <SliderImg />
+              <p className={styles.galleryDescription}>
+                Contamos con el mejor servicio y la mejor calidad en todos
+                nuestros productos para así atender cada una de las necesidades
+                de nuestros clientes. <br></br>
+              </p>
+              <div className={styles.gallery}>
+                <SliderImg />
+              </div>
             </div>
           </div>
         </div>

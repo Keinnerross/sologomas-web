@@ -1,6 +1,5 @@
 .bannerContainer {
-  width: 100vw;
-  height: 480px;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -16,6 +15,7 @@
   background-size: 100%;
   background-position: center;
   padding-top: 55px;
+  background-color: peru;
 }
 
 .sliderSection {
@@ -74,7 +74,7 @@
 }
 
 /* Estilos para tabletas (ancho entre 768px y 1200px) */
-@media (min-width: 900px) and (max-width: 1200px) {
+@media (min-width: 900px) and (max-width: 1000px) {
   .bannerContainer {
     height: 300px;
   }

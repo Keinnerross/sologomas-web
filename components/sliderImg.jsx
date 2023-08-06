@@ -25,9 +25,8 @@ const SliderImg = () => {
       {
         breakpoint: 1180,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          centerMode: true,
         },
       },
       {
@@ -35,7 +34,7 @@ const SliderImg = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: false,
+          centerMode: true,
         },
       },
     ],
