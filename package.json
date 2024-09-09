@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-  "export": "next export"
-
+    "export": "next export"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -19,6 +18,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.14.0",
+    "sweetalert2-react-content": "^5.0.7"
   }
 }

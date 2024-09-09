@@ -16,7 +16,7 @@ const Footer = () => {
             ></div>
             <div className={styles.infoContainer}>
               <FaPhoneAlt />
-              <p>(51) 239 0331</p>
+              <p>(51) 123 4567</p>
             </div>
             <div className={styles.infoContainer}>
               <GrMail />
@@ -81,7 +81,7 @@ const Footer = () => {
       </footer>
       <div className={styles.barFooter}>
         <span>Sologomas.cl</span>
-        <span>©2023 Solo Gomas Todos los derechos reservados</span>
+        <span>©2022 Solo Gomas Todos los derechos reservados</span>
       </div>
     </>
   );
