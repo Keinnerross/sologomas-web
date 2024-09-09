@@ -17,7 +17,7 @@ const Modal = () => {
             title: "Esta es una versión demo",
             html: `
             Puedes quedarte y ver el <b>website</b> ó ver la
-            <a href="https://keinnerross.github.io/SologomasApp/" target="_blank"><b style="color: #e32a30">demo del cotizador</b></a> de correas.
+            <a href="https://keinnerross.github.io/SologomasApp/" target="_blank" rel="noopener noreferrer"><b style="color: #e32a30">demo del cotizador</b></a> de correas.
           `,
           iconColor: "#e32a30",
             icon: "info",

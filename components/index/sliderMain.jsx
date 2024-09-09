@@ -22,7 +22,7 @@ const SliderMain = () => {
       <Modal />
       <Slider className={styles.bannerContainer} {...settings}>
         <div>
-          <a href="https://keinnerross.github.io/SologomasApp/" target="_blank">
+          <a href="https://keinnerross.github.io/SologomasApp/" target="_blank" rel="noopener noreferrer">
             <div
               className={styles.banner1}
               style={{ backgroundImage: `url(${bannerOne.src})` }}
@@ -31,7 +31,7 @@ const SliderMain = () => {
         </div>
 
         <div>
-          <a href="https://keinnerross.github.io/SologomasApp/" target="_blank">
+          <a href="https://keinnerross.github.io/SologomasApp/" target="_blank" rel="noopener noreferrer">
 
             <div
               className={styles.banner2}
